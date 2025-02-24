@@ -20,7 +20,10 @@
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="#page-top">
-                    <img src="assets/img/14.png" alt="Logo" style="max-height: 110px;">
+                    <img src="assets/img/14.png" alt="Logo" style="max-height: 27px;
+                    transform: scale(5.5);
+                    margin-top: 17px;
+                    margin-left: 10px;">
                 </a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
@@ -44,7 +47,8 @@
                     <div>
                         <h1 class="mx-auto my-0 text-uppercase">Festival de Música Antioquia</h1>
                         <h2 style="max-width: none;" class="text-white-50 mx-auto mt-2 mb-5">IGREJA BAPTISTA ANTIOQUIA<p>AGO. 15-16, 2025 • PORTO</p></h2>
-                        <a class="btn btn-primary1" href="#about">INSCRIÇÃO</a>
+                        <a class="btn btn-primary1" href="#about" style="pointer-events: none; opacity: 0.5; cursor: not-allowed;">INSCRIÇÕES EM BREVE</a>
+                        <!-- QUANDO TIVER DISPONÍVEL A INSCRIÇÃO, USAMOS ESSE <a class="btn btn-primary1" href="#about" style="pointer-events: none; opacity: 0.5; cursor: not-allowed;">INSCRIÇÕES EM BREVE</a> -->
                     </div>
                 </div>
             </div>
@@ -110,12 +114,21 @@ Durante a Semana de Música Sacra, os participantes terão acesso a diversas ofi
                     </div>
                 </div>
                 <!-- Featured Project Row-->
-                <div id="signup" class="row gx-0 mb-4 mb-lg-5 align-items-center" style="flex-direction: row-reverse;margin-top: 100px;">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/palestrantesprof.jpg" alt="..." /></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Informação Geral</h4>
-                            <p class="text-black-50 mb-0">Durante o nosso evento, contamos com palestras abertas ao público, ministradas por palestrantes experientes, para todos que desejarem participar. Além disso, oferecemos masterclasses e ensaios de naipe conduzidos por professores altamente qualificados, proporcionando um aprendizado mais aprofundado e exclusivo para os inscritos. É uma oportunidade única de crescimento e troca de experiências em um ambiente transformador.</p>
+                <div id="signup" style="margin-top: 100px;">
+                    <!-- <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/palestrantesprof.jpg" alt="..." /></div> -->
+                    <div >
+                        <div >
+                            <div class="column">
+                                <h3 style="text-align: center; font-size: 2.75rem;">Informações Gerais</h3>
+                                <p>As inscrições para o evento estarão abertas de <span class="highlight">1 de Junho a 5 de Julho de 2025</span> e deverão ser realizadas através do nosso site.</p>
+                                <p>Durante o processo de inscrição, cada candidato deverá enviar um <span class="highlight">breve vídeo de 30 segundos</span> a tocar o seu instrumento. Este vídeo será analisado pelos professores para melhor adequação ao nível de cada participante.</p>
+                                <p>A inscrição garante acesso a <span class="highlight">todas as atividades do evento</span> e inclui <span class="highlight">alimentação</span>, para que os participantes não tenham essa preocupação.</p>
+                            </div>
+                            <div class="column">
+                                <p>No entanto, <span class="highlight">não oferecemos alojamento</span>. Caso necessite, poderá entrar em contacto connosco, e faremos o possível para ajudar, seja com <span class="highlight">indicações de alojamento</span> ou apoio de irmãos da igreja local.</p>
+                                <p>Após o encerramento do período de inscrição, os participantes receberão as <span class="highlight">partituras e áudios</span> dos arranjos a serem ensaiados e tocados no <span class="highlight">grande concerto de encerramento</span>.</p>
+                                <p>⚠️ <span class="highlight">Vagas limitadas por instrumento!</span> Para garantir a sua participação, recomendamos que <span class="highlight">se inscreva o mais rápido possível</span> ou entre em contacto connosco para mais informações.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -123,83 +136,46 @@ Durante a Semana de Música Sacra, os participantes terão acesso a diversas ofi
         </section>
         <!-- Signup-->
         <section class="signup-section" id="contact">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Inscreve-te na nossa Newsletter para ter mais informações!</h2>
-                        <form class="form-signup" id="contactForm" action="https://gmail.us9.list-manage.com/subscribe/post?u=16fde91939b3ceac142ff3ef1&amp;id=321b9b03c6&amp;f_id=0003e7e3f0" method="post" name="mc-embedded-subscribe-form" class="validate" onsubmit="return handleSubmit(event)">
-                            <!-- Email address input-->
-                            <div class="row input-group-newsletter">
-                                <div class="col">
-                                    <input class="form-control" id="emailAddress" type="email" name="EMAIL" placeholder="Inserir email!" aria-label="Enter email address..." required />
-                                </div>
-                                <div class="col-auto">
-                                    <button class="btn btn-primary disabled" id="submitButton" type="submit" disabled>Quero receber<br>novidades!</button>
-                                </div>
-                            </div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">O email é obrigatório.</div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">O Email não é valido.</div>
-                            <!-- Submit success message-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3 mt-2 text-white">
-                                    <div class="fw-bolder">Obrigado por inscrever-se!</div>
-                                    <br />
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <div class="d-none" id="submitErrorMessage">
-                                <div class="text-center text-danger mb-3 mt-2">Erro ao enviar mensagem!</div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        
-            <!-- Script para validação do email e ativação do botão -->
-            <script>
-                const emailInput = document.getElementById('emailAddress');
-                const submitButton = document.getElementById('submitButton');
-            
-                // Valida se o email é válido
-                emailInput.addEventListener('input', function() {
-                    if (emailInput.validity.valid) {
-                        submitButton.disabled = false;
-                        submitButton.classList.remove('disabled');
-                    } else {
-                        submitButton.disabled = true;
-                        submitButton.classList.add('disabled');
-                    }
-                });
-        
-                // Função de envio e controle da resposta
-                function handleSubmit(event) {
-                    event.preventDefault();  // Impede o envio padrão do formulário
-        
-                    // Exibe a mensagem de sucesso
-                    document.getElementById('submitSuccessMessage').classList.remove('d-none');
-                    document.getElementById('submitErrorMessage').classList.add('d-none');
-        
-                    // Esconde o formulário após o envio bem-sucedido
-                    document.getElementById('contactForm').classList.add('d-none');
-        
-                    // Aqui, você pode fazer o processamento do formulário via JavaScript se necessário
-                }
-            </script>
-        
-            <!-- Script de validação do Mailchimp -->
-            <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-            <script type="text/javascript">
-                (function($) {
-                    window.fnames = new Array(); 
-                    window.ftypes = new Array(); 
-                    fnames[0] = 'EMAIL'; 
-                    ftypes[0] = 'email';
-                })(jQuery); 
-                var $mcj = jQuery.noConflict(true);
-            </script>
-        
+            <div class="contact-form">
+                <span class="heading">Envie suas dúvidas</span>
+                <form id="contactForm">
+                  <label for="name">Nome:</label>
+                  <input type="text" name="name" id="name" required="">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required="">
+                  <label for="message">Menssagem:</label>
+                  <textarea id="message" name="message" required=""></textarea>
+                  <button type="submit" id="submitButton">Enviar</button>
+                    <div class="d-none text-success mt-3" id="submitSuccessMessage">Mensagem enviada com sucesso!</div>
+                    <div class="d-none text-danger mt-3" id="submitErrorMessage">Erro ao enviar mensagem!</div>
+                </form>
+              </div> 
         </section>
+        <!-- Importando a biblioteca EmailJS -->
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script>
+            emailjs.init("XjH9qcmxyNSDtZpWu"); // Substitua pela sua Public Key do EmailJS
+
+            document.getElementById("contactForm").addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                emailjs.send("service_2b8im5d", "template_vonhu3h", {
+                    name: document.getElementById("name").value,
+                    email: document.getElementById("email").value,
+                    message: document.getElementById("message").value
+                }).then(function(response) {
+                    console.log("E-mail enviado!", response.status, response.text);
+                    document.getElementById("submitSuccessMessage").classList.remove("d-none");
+                    document.getElementById("submitErrorMessage").classList.add("d-none");
+                    document.getElementById("contactForm").reset();
+                }, function(error) {
+                    console.log("Erro:", error);
+                    document.getElementById("submitErrorMessage").classList.remove("d-none");
+                    document.getElementById("submitSuccessMessage").classList.add("d-none");
+                });
+            });
+        </script>
+
         
         <!-- Contact-->
         <section class="contact-section bg-black">
@@ -237,9 +213,9 @@ Durante a Semana de Música Sacra, os participantes terão acesso a diversas ofi
                     </div>
                 </div>
                 <div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                    <a class="mx-2" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="mx-2" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </section>
