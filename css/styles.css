@@ -644,15 +644,29 @@ progress {
   margin-right: auto;
   margin-left: auto;
 }
+@media (max-width: 575px){
+  .contact-form{
+    width: 60% !important;
+  }
+  .signup-section{
+    justify-items: center !important;
+  }
+}
 
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
   }
+  .contact-form{
+    width: 60% !important;
+  }
 }
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
     max-width: 720px;
+  }
+  .contact-form{
+    width: 60% !important;
   }
 }
 @media (min-width: 992px) {
@@ -11113,6 +11127,9 @@ body {
   .masthead h1, .masthead .h1 {
     font-size: 4rem;
     line-height: 4rem;
+  }
+  .contact-form{
+    width: 60%;
   }
 }
 @media (min-width: 992px) {
