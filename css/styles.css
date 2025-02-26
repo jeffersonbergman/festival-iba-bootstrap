@@ -646,10 +646,10 @@ progress {
 }
 @media (max-width: 575px){
   .contact-form{
-    width: 60% !important;
-  }
-  .signup-section{
-    justify-items: center !important;
+    width: 80% !important;
+    justify-content: center !important;
+    display: grid
+;
   }
 }
 
