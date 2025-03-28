@@ -8343,7 +8343,7 @@ textarea.form-control-lg {
 
 .bg-black {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #7B1536;
 }
 
 .bg-white {
@@ -9771,7 +9771,7 @@ textarea.form-control-lg {
     margin-bottom: 1.5rem !important;
   }
   .mb-lg-5 {
-    margin-bottom: 3rem !important;
+    margin-bottom: 5rem !important;
   }
   .mb-lg-auto {
     margin-bottom: auto !important;
